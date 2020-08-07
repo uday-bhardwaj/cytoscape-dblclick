@@ -9,7 +9,7 @@ export default function extension(
 ): Core {
   let clicked: any | null = null;
 
-  this.on('click', (evt: EventObject) => {
+  this.on('vclick', (evt: EventObject) => {
     if (clicked && clicked === evt.target) {
       clicked = null;
       (evt as any).preventDefault();
